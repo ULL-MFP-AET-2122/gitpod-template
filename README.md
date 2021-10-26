@@ -1,7 +1,12 @@
-# Práctica Aprender Markdown
+# Titulo grande
 
-## Enlace 
+## Sección 
 
+En esta primera sección ....
+
+* uno *esto sale en itálicas*
+* dos
+* **tres**
 * [Experiencia profesional](experiencia-profesional.md)
 * [prueba](prueba.md)
 
