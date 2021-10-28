@@ -22,7 +22,7 @@ ports:
     onOpen: open-browser
 ```
 
-También se ha añadido un Dockerfile <.gitpod.Dockerfile> que extiende el contenedor [gitpod/workspace-full](gitpod/workspace-full) instalando GitHub Cli y `markdownlint-cli`:
+También se ha añadido un Dockerfile [.gitpod.Dockerfile](.gitpod.Dockerfile) que extiende el contenedor [gitpod/workspace-full](https://github.com/gitpod-io/workspace-images/blob/master/full/Dockerfile) instalando GitHub Cli y un linter para markdown: `markdownlint-cli`:
 
 ```dockerfile
 FROM gitpod/workspace-full
@@ -32,6 +32,11 @@ FROM gitpod/workspace-full
 RUN npm install -g markdownlint-cli # runs during prebuild
 RUN brew install gh
 ```
+
+## El script set-github-token
+
+El script [set-github-token](set-github-token) recibe como argumento un token de autenticación que puede obtener de <https://github.com/settings/tokens> y establece el valor de la variable `GITHUB_TOKEN` al mismo.
+
 
 ## Editar en Mi Máquina con Visual Studio Code 
 
