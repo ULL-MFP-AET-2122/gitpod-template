@@ -35,7 +35,15 @@ RUN brew install gh
 
 ## El script set-github-token
 
-El script [set-github-token](set-github-token) recibe como argumento un token de autenticación que puede obtener de <https://github.com/settings/tokens> y establece el valor de la variable `GITHUB_TOKEN` al mismo.
+El script [set-github-token](set-github-token) recibe como argumento un token de autenticación para `gh` que puede obtener de <https://github.com/settings/tokens> y establece el valor de la variable de entorno `GITHUB_TOKEN` al mismo. Cuando cree el token, dele amplios poderes (scope amplio)
+
+Se ejecuta así:
+
+```
+gitpod /workspace/your-repo $ source set-github-token <your-token>
+```
+
+Lo que hace es mantener persistente entre distintos workspaces el valor de la variable de entorno `GITHUB_TOKEN`
 
 
 ## Editar en Mi Máquina con Visual Studio Code 
