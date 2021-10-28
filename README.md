@@ -1,6 +1,5 @@
 # Sobre este Template
 
-![ULL](images/ull.gif)
 En este template se ha dejado un fichero de configuración para gitpod [.gitpod.yml](.gitpod.yml) con algunos alias para `git`
 
 ```yml
@@ -23,7 +22,7 @@ ports:
     onOpen: open-browser
 ```
 
-También se ha añadido un Dockerfile <.gitpod.Dockerfile> que extiende el contenedor `gitpod/workspace-full` instalando GitHub Cli y `markdownlint-cli`:
+También se ha añadido un Dockerfile <.gitpod.Dockerfile> que extiende el contenedor [gitpod/workspace-full](gitpod/workspace-full) instalando GitHub Cli y `markdownlint-cli`:
 
 ```dockerfile
 FROM gitpod/workspace-full
