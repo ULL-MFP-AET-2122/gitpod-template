@@ -1,24 +1,38 @@
-# Titulo grande
+# Sobre este Template
 
 ![ULL](images/ull.gif)
+En este template se ha dejado un fichero de configuración para gitpod [.gitpod.yml](.gitpod.yml) con algunos alias para `git`
 
-## Sección 
+```yml
+# List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
+tasks:
+  - init: |
+      git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
+      git config --global alias.co checkout
+      git config --global alias.br branch
+      git config --global alias.ci commit
+      git config --global alias.st status
+    command: echo 'Bienvenido a esta tarea de Aprendizaje y Enseñanza de la Tecnología'
 
-En esta primera sección ....
+image:
+  file: .gitpod.Dockerfile
 
-* uno *esto sale en itálicas*
-* dos
-* **tres**
-* [Experiencia profesional](experiencia-profesional.md)
-* [prueba](prueba.md)
+# List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
+ports:
+  - port: 3000
+    onOpen: open-browser
+```
 
+También se ha añadido un Dockerfile <.gitpod.Dockerfile> que extiende el contenedor `gitpod/workspace-full` instalando GitHub Cli y `markdownlint-cli`:
 
-## Negritas
+```dockerfile
+FROM gitpod/workspace-full
 
-Ejemplo con **Negritas**
-
-
-
+# Install custom tools, runtime, etc.
+# RUN brew install fzf
+RUN npm install -g markdownlint-cli # runs during prebuild
+RUN brew install gh
+```
 
 ## Editar en Mi Máquina con Visual Studio Code 
 
