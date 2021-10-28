@@ -8,7 +8,7 @@ tasks:
       git config --global alias.st status
       npm install -g markdownlint-cli # runs during prebuild
       brew install gh
-    command: echo 'start script'
+    command: echo 'Bienvenido a esta tarea de Aprendizaje y Enseñanza de la Tecnología'
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
