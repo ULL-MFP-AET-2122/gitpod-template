@@ -1,4 +1,11 @@
-# Sobre este Template
+# Escriba aquí su Informe
+
+Escriba aquí el informe de su práctica.
+
+
+## Información Sobre este Template
+
+Una vez leída esta sección, pede eliminarla si lo prefiere.
 
 En este template se ha dejado un fichero de configuración para gitpod [.gitpod.yml](.gitpod.yml) con algunos alias para `git`
 
