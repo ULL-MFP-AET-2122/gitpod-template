@@ -3,7 +3,9 @@
 Escriba aquí el informe de su práctica.
 
 
-## Información Sobre este Template
+## Información Sobre este Template para gitpod
+
+Este template contine algunos ficheros para facilitar el trabajao y la edición en GitPod.
 
 Una vez leída esta sección, pede eliminarla si lo prefiere.
 
